@@ -21,8 +21,6 @@ class HeuristicFunction:
     def __init__(self, problem=None):
         self.problem = problem
 
-        # PLACE ANY INITIALIZATION CODE HERE
-
         # Set our map as our problem map
         self.map = problem.map
 
@@ -65,7 +63,6 @@ class HeuristicFunction:
         if loc is None:
             return value
         else:
-            # PLACE YOUR CODE FOR CALCULATING value OF loc HERE
 
             # Find our euclidean distance between our location and our problem goal
             euclidean_distance = self.map.euclidean_distance(loc, self.goal)
