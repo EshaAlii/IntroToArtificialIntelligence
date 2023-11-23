@@ -5,41 +5,6 @@
 # route-finding problem. Various search utilities from "route.py" are
 # used in this function, including the classes RouteProblem, Node, and
 # Frontier.
-#
-# YOUR COMMENTS INCLUDING CITATIONS AND ACKNOWLEDGMENTS
-#
-# Comments:
-# The entirety of this code is similar to DFS in structure, utilizing the Generic Search Pseudocode provided to us.
-# The primary difference between the two is the simple fact that, when the frontier was initialized, I changed the
-# secondary input to True, rather than False, to implement a Stack Structure rather than a Queue structure.
-# Additionally, I implemented a set in python, rather than an array, to follow in line with the pseudocode provided.
-# Most of my understanding of the code came from the pseudocode, and my background knowledge in CSE 100 on
-# the provided DFS and BFS algorithms (although I did utilize reviews). There was a point where I was confused as to
-# how the initialization of the Frontier functioned. I was under the impression that False initialized a Stack, however
-# that was a misunderstanding on my end and speaking with Dulce Karina allowed me to see the error in my logic.
-# Additionally, I recall not utilizing repeat check initially, as that was not implemented within the Pseudocode.
-# I spoke to Ernesto, unsure of how I would implement the repeat check, as he was also stuck on this issue as well.
-# Eventually, after overlooking the pseudocode, we came to the conclusion that implementing it within the for loop
-# would make the most sense, given that there could be cases where there is a repeated child node in the reached_set.
-#
-#
-# Citations:
-# PA0Spec.pdf -> Generic Search Slide pseudocode that was provided
-# BFS Review -> https://www.youtube.com/watch?v=HZ5YTanv5QE
-# DFS Review -> https://www.youtube.com/watch?v=Urx87-NMm6c
-# Sets in Python -> https://www.w3schools.com/python/python_sets.asp
-# Review on For loops in Python -> https://wiki.python.org/moin/ForLoop
-# Discussion on Frontier Initialization (determining Stack vs Queue) ->  Dulce Karina Pimentel-Hurlburt
-# Discussion on Repeat Check Implementation logic (determining how to use it) -> Ernesto Reyes
-#
-#
-# Acknowledgements:
-# Dulce Karina Pimentel-Hurlburt
-# Ernesto Reyes
-#
-#
-#
-# Esha Sarfraz - September 29, 2022
 
 
 from route import Node
