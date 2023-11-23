@@ -16,8 +16,6 @@ def a_star_search(problem, h, repeat_check=False):
     location, if a solution is found. Only perform repeated state checking if
     the provided boolean argument is true."""
 
-    # PLACE YOUR CODE HERE
-
     # Create the node with the initial state of the problem
     initial = Node(problem.start, h_eval=h.h_cost(problem.start), h_fun=h)
 
