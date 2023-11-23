@@ -9,48 +9,6 @@
 # when the HeuristicFunction is created, providing information potentially
 # useful for initialization. The actual heuristic cost function, simply
 # called "h_cost", takes a state (location) as an argument.
-#
-# YOUR COMMENTS INCLUDING CITATIONS
-#
-# Comments:
-# The entirety of this code was created via a conjunction of review/relearning of how a heuristic function works in
-# tandem with A* search, how it incorporates euclidean distance, and a conversation with Nick Mount and
-# Andrew Mouillesseaux to help me determine the potential way of implementing heuristic and the overall concept
-# behind it. Essentially, based on lecture I found that the value that needs to be returned is the time cost.
-# Time cost, in general, was to be calculated by dividing Euclidean distance between our location and and problem goal,
-# by the maximum mpg. Thanks to my conversation with Andrew I learnt that we wanted the largest mpg to minimize the
-# heuristic function and thus make it more "admissable". The euclidean distance portion was easy to understand and
-# implement. It was calculating the maximum mpg that proved to be difficult. All I knew, thanks to a conversation with
-# Nick, was that mpg was calculated by dividing distance by gas amount and that I needed to loop through the locations
-# and connections to each location in order to find the maximum mpg. However, it wasn't until I looked back at
-# PA1Spec.pdf that I found out that the road cost was equivalent to the gas amount, which I took to be the
-# action_cost function in route.py. From here, constructing the rest of the code and comparing my self.max_mpg to the
-# current mpg, proved to be work.
-#
-#
-# Citations:
-# PA1Spec.pdf -> Greedy Search pseudocode that was provided
-# PA1Spec.pdf -> A* Search pseudocode that was provided
-# PA1Spec.pdf -> Uniform Cost Search pseudocode that was provided
-# PASpec.pdf -> action_cost = road cost = gas amount
-# https://www.geeksforgeeks.org/greedy-best-first-search-algorithm/ -> Review on Greedy Search
-# https://www.geeksforgeeks.org/uniform-cost-search-dijkstra-for-large-graphs/ -> Review on Uniform Cost Search
-# https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/ -> Review on Dijkstra (for ucost)
-# https://blog.finxter.com/python-__delitem__-magic-method/ -> Utilizing front_init.__delitem__(child)
-# https://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html -> Understanding of Heuristic + A* search
-# https://brilliant.org/wiki/a-star-search/#heuristics -> Understanding + Overestimation of Heuristic
-# Conversation with Nick Mount and Andrew Mouillesseaux on Heuristic Function Concept + how to go about implementing it
-#
-#
-# Acknowledgements:
-# Nick Mount -> Helped understand concept behind Heuristic Function
-# Andrew Mouillesseaux -> Helped understand concept behind Heuristic Function + how to go about implementing it
-#
-#
-# Esha Sarfraz - September 29, 2023
-#
-
-
 
 import route
 
