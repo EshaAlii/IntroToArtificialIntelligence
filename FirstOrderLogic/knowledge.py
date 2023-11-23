@@ -35,25 +35,7 @@
 # contained in this file. All axioms must be definite clauses.
 #
 # This content is protected and may not be shared, uploaded, or distributed.
-#
-# Comments:
-# The entierty of this assignment was completed with my prior knowledge from taking CSE 015, otherwise known as
-# Discrete Mathematics. Additionally, I utilized the Ontology to help assist with general structure to create these
-# axioms. Additionally, I received a bit of advice from Andrew Mouillesseaux, who explained that utilizing OR (|) or
-# NOT (~) would not work within the context of this lab, and that I had to find a way to account for it. To account for
-# OR(|) I simply divided the axiom into three separate ones. As for NOT (~) it took me a while to figure out how to
-# account for it, but essentially I figured out to do the "opposite" of the presented sentence to figure out the
-# corresponding axiom.
-#
-#
-# Citations:
-# PA2spec.pdf -> Ontology
-#
-# Acknowledgements:
-# Andrew Mouillesseaux -> Explained that utilizing OR or NOT (| or ~) would not work in this lab
-#
-# Esha Sarfraz - November 3, 2023
-#
+
 
 
 # An Example from Russell & Norvig (2020)
@@ -97,8 +79,6 @@ crime_sentences = ['(American(x) & Weapon(y) & Sells(x, y, z) & Hostile(z)) ==> 
 #   cold or punctured, then the victim is drained of blood.
 # If a victim's body is complete (i.e., not incomplete), then
 #   it is not dismembered or disemboweled.
-
-# PLACE YOUR FOL SENTENCES IN THIS LIST
 
 monster_sentences = [
     # Celene is a vampire.
