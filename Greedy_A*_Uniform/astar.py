@@ -5,44 +5,6 @@
 # problem. Various search utilities from "route.py" are used in this function,
 # including the classes RouteProblem, Node, and Frontier. Also, this function
 # uses heuristic function objects defined in the "heuristic.py" file.
-#
-# YOUR COMMENTS INCLUDING CITATIONS
-#
-# Comments:
-# The entirety of this code was created by utilizing prior code and changing up implementation to better fit the
-# A* Search pseudocode provided to us in PA1spec.pdf. Essentially what differentiated this code from my prior one
-# was the node initialization, frontier initialization, and checking if the child node was in the reached set as
-# opposed to not in the reached set. Additionally some more differences include: checking if the child node was in the
-# frontier and had a higher cost, deleting the node from the frontier if it was and adding the child to the frontier,
-# and implementing an else statement (if the child node was NOT in the frontier) and adding our child node to the
-# frontier, and the child node's location to the reached set. This specific algorithm is one that I was unfamiliar with
-# in terms of conceptual understanding and coding.  So I made sure to search up the the A* algorithm to better my
-# understanding of it overall.
-#
-#
-# Citations:
-# PA1Spec.pdf -> Greedy Search pseudocode that was provided
-# PA1Spec.pdf -> A* Search pseudocode that was provided
-# PA1Spec.pdf -> Uniform Cost Search pseudocode that was provided
-# PASpec.pdf -> action_cost = road cost = gas amount
-# https://www.geeksforgeeks.org/greedy-best-first-search-algorithm/ -> Review on Greedy Search
-# https://www.geeksforgeeks.org/uniform-cost-search-dijkstra-for-large-graphs/ -> Review on Uniform Cost Search
-# https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/ -> Review on Dijkstra (for ucost)
-# https://blog.finxter.com/python-__delitem__-magic-method/ -> Utilizing front_init.__delitem__(child)
-# https://theory.stanford.edu/~amitp/GameProgramming/Heuristics.html -> Understanding of Heuristic + A* search
-# https://brilliant.org/wiki/a-star-search/#heuristics -> Understanding + Overestimation of Heuristic
-# Conversation with Nick Mount and Andrew Mouillesseaux on Heuristic Function Concept + how to go about implementing it
-#
-#
-# Acknowledgements:
-# Nick Mount -> Helped understand concept behind Heuristic Function
-# Andrew Mouillesseaux -> Helped understand concept behind Heuristic Function + how to go about implementing it
-#
-#
-# Esha Sarfraz - September 29, 2023
-#
-
-
 
 from route import Node
 from route import Frontier
